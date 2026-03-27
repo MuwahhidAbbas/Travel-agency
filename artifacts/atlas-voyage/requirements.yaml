@@ -1,0 +1,11 @@
+packages:
+  "framer-motion": "Required for premium scroll animations, parallax effects, and page transitions"
+  "lucide-react": "Required for high-quality UI icons across the application"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility to merge Tailwind classes without style conflicts"
+
+images: []
+
+notes:
+  - "Static marketing site with dummy newsletter hook to simulate interactive functionality."
+  - "Using Unsplash for all destination and hero imagery as requested."

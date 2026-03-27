@@ -1,0 +1,213 @@
+You are a senior product design agency and elite frontend engineering team.
+
+Your task is to build a production-quality official website for a premium travel company that looks custom-designed by a professional agency — NOT an AI template.
+
+This project will be hosted publicly as a client demonstration and must look realistic enough that a real travel company could immediately adopt it.
+
+🎯 OBJECTIVE
+
+Create a high-end, modern, ultra-professional travel company website that:
+
+showcases travel services
+builds trust instantly
+feels premium and corporate
+maximizes engagement
+runs smoothly under 60 FPS performance standards
+contains refined animations without performance lag
+
+The final result should make viewers think:
+
+“This is a real travel brand built by an experienced professional.”
+
+⚙️ TECH STACK (MANDATORY)
+
+Use:
+
+React + Vite
+Tailwind CSS
+Framer Motion (for animations)
+Modern semantic HTML
+Fully responsive design
+Performance optimized assets
+Lazy loading images
+Component-based architecture
+
+DO NOT use heavy UI libraries that slow performance.
+
+🎨 DESIGN RULES (VERY IMPORTANT)
+Visual Style
+Premium corporate aesthetic
+Clean luxury travel branding
+NO neon colors
+NO gradient overload
+NO AI-template feel
+Color Palette
+
+Use elegant tones:
+
+Deep navy / midnight blue
+Soft sand / beige accents
+White backgrounds
+Muted gold highlights (very subtle)
+Typography
+Headings: elegant modern sans-serif (Inter / Poppins)
+Body: highly readable professional font
+Strong spacing hierarchy
+Generous whitespace
+🚀 PERFORMANCE REQUIREMENTS
+
+Website MUST:
+
+Maintain smooth animations (~60fps feel)
+Use GPU-friendly animations only
+Prefer transform & opacity
+Avoid layout thrashing
+Lazy load sections/images
+Optimize bundle size
+Use code splitting
+
+Performance is PRIORITY over visual excess.
+
+✨ ANIMATION REQUIREMENTS
+
+Animations must feel premium and intentional, not flashy.
+
+Required Animations:
+1. Scroll Animations
+Sections fade + slight upward motion
+Parallax hero background (subtle)
+Content reveal timing staggered
+2. Hover Animations
+Cards lift slightly
+Buttons micro-scale interaction
+Image zoom (very subtle)
+3. Click Animations
+Smooth transitions
+Button ripple or press feedback
+4. Page Feel
+
+Every interaction must feel alive but professional.
+
+NO exaggerated motion.
+
+🧭 WEBSITE STRUCTURE
+1️⃣ Hero Section
+Stunning travel destination imagery
+Headline:
+“Explore the World With Confidence”
+CTA buttons:
+Explore Tours
+Plan Your Trip
+Smooth entrance animation
+2️⃣ About Company
+Professional travel brand story
+Trust-focused messaging
+Animated statistics:
+10,000+ Travelers
+40+ Countries
+8 Years Experience
+3️⃣ Featured Destinations
+
+Interactive cards:
+
+Europe Tours
+Asia Adventures
+Luxury Maldives
+Desert Safaris
+Cultural Expeditions
+
+Hover animations required.
+
+4️⃣ Services Section
+
+Grid layout:
+
+Custom Trip Planning
+Group Tours
+Corporate Travel
+Visa Assistance
+Travel Insurance
+
+Each card animated on scroll.
+
+5️⃣ Why Choose Us
+
+Trust-building section:
+
+Expert Guides
+Secure Booking
+24/7 Support
+Personalized Experiences
+
+Use icons + stagger animations.
+
+6️⃣ Testimonials
+
+Auto-sliding carousel.
+
+Professional client quotes.
+
+Smooth transitions only.
+
+7️⃣ Call To Action
+
+High-conversion section:
+
+“Start Your Journey Today”
+
+Animated CTA button.
+
+8️⃣ Footer
+Company info
+Social links
+Newsletter signup
+Clean minimal layout
+📱 RESPONSIVENESS
+
+Must look perfect on:
+
+Desktop
+Tablet
+Mobile
+
+Mobile animations simplified for performance.
+
+🧱 CODE QUALITY
+Clean folder structure
+Reusable components
+Comments explaining sections
+Production-ready code
+🌐 NETLIFY DEPLOYMENT (MANDATORY)
+
+Create deployment-ready configuration.
+
+Generate:
+
+netlify.toml
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+Ensure project builds correctly for Netlify static hosting.
+
+🧠 REALISM REQUIREMENTS
+Use realistic travel images (royalty-free placeholders)
+Realistic company name: AtlasVoyage Travel
+Realistic copywriting (NOT generic AI text)
+Professional tone
+Business credibility language
+🏁 FINAL GOAL
+
+The website must look like:
+
+agency-built
+investor-ready
+client-ready
+portfolio-level work
+
+Someone visiting should immediately assume an experienced developer built it.

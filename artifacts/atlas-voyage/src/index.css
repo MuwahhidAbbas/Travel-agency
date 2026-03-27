@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Inter', sans-serif;
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-card-border: hsl(var(--card-border));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-popover-border: hsl(var(--popover-border));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  /* Very light sand background */
+  --background: 60 33% 98%;
+  /* Dark charcoal foreground for text */
+  --foreground: 240 28% 14%;
+  
+  /* White cards */
+  --card: 0 0% 100%;
+  --card-foreground: 240 28% 14%;
+  --card-border: 60 20% 90%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 28% 14%;
+  --popover-border: 60 20% 90%;
+
+  /* Deep Navy */
+  --primary: 215 68% 14%;
+  --primary-foreground: 0 0% 100%;
+
+  /* Subtle Sand/Gray */
+  --secondary: 40 20% 94%;
+  --secondary-foreground: 215 68% 14%;
+
+  /* Warm Gold / Sand Accent */
+  --accent: 40 46% 61%;
+  --accent-foreground: 0 0% 100%;
+
+  /* Muted cool gray for body */
+  --muted: 215 17% 96%;
+  --muted-foreground: 215 17% 40%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 60 20% 90%;
+  --input: 60 20% 90%;
+  --ring: 40 46% 61%;
+
+  --radius: 0.75rem;
+}
+
+.dark {
+  /* Deep Navy Background */
+  --background: 215 68% 10%;
+  --foreground: 60 33% 98%;
+
+  --card: 215 68% 12%;
+  --card-foreground: 60 33% 98%;
+  --card-border: 215 40% 20%;
+
+  --popover: 215 68% 12%;
+  --popover-foreground: 60 33% 98%;
+  --popover-border: 215 40% 20%;
+
+  /* Gold */
+  --primary: 40 46% 61%;
+  --primary-foreground: 215 68% 14%;
+
+  --secondary: 215 40% 20%;
+  --secondary-foreground: 60 33% 98%;
+
+  --accent: 40 46% 61%;
+  --accent-foreground: 215 68% 14%;
+
+  --muted: 215 40% 20%;
+  --muted-foreground: 215 17% 70%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 60 33% 98%;
+
+  --border: 215 40% 20%;
+  --input: 215 40% 20%;
+  --ring: 40 46% 61%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased selection:bg-accent selection:text-white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
+  }
+}
